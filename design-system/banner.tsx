@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { CSSObject } from '@emotion/react';
 import Box from './box';
-import image from '../assets/banner/legends.png';
+import myImage from '../assets/banner/legends.png';
 import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
 import { StaticImageData } from 'next/image';
@@ -19,7 +19,7 @@ const El = styled(Box)(({ localStyles }: Props) => ({
   alignItems: 'center',
   justifyContent: 'center',
   padding: 'var(--scale-48)',
-  backgroundImage: `url('${image}')`,
+  backgroundImage: `url('${myImage}')`,
   backgroundPosition: 'center left',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',

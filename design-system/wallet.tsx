@@ -5,6 +5,7 @@ import Box from './box';
 import ChevronDown from './icons/chevron';
 import Body from './body';
 import { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 export type Props = {
   balance?: number;

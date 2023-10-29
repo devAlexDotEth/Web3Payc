@@ -15,7 +15,7 @@ import Navigation from '../design-system/navigation';
 import Wallet from '../design-system/wallet';
 import Banner from '../design-system/banner';
 import Card from '../design-system/card';
-import image from '../assets/pfp.png';
+import myImage from '../assets/pfp.png';
 import PFP from '../assets/pfp/legends.png';
 import GenesisPFP from '../assets/pfp/genesis.png';
 import DegenHoursPFP from '../assets/pfp/degenhours.png';
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 
       <Navigation 
         localStyles={{position: 'fixed', top: 0}}
-        wallet={<Wallet balance={0.0389} address="0x6972b4e81673bcec5f8b4c280E6F752C800D6ED6" profile={image} />}>
+        wallet={<Wallet balance={0.0389} address="0x6972b4e81673bcec5f8b4c280E6F752C800D6ED6" profile={myImage} />}>
         <Button variant='TERTIARY' size='M' active>Home</Button>
         <Button variant='TERTIARY' size='M'>Portals</Button>
         <Button as="a" variant='TERTIARY' size='M' after={<External />} href='https://payc.auraexchange.org/' target="_blank">Marketplace</Button>

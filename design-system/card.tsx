@@ -9,7 +9,7 @@ import { StaticImageData } from 'next/image';
 
 type ElProps = {
   heading?: string;
-  pfp?: string | StaticImageData;
+  pfp?: StaticImageData;
   size?: string;
   children?: ReactNode;
   localStyles?: CSSObject;
