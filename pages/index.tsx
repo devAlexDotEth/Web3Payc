@@ -2,6 +2,29 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { NextPage } from "next";
+import Button from '../design-system/button';
+import Twitter from '../design-system/icons/twitter';
+import Link from '../design-system/link';
+import Stack from '../design-system/stack';
+import Grid from '../design-system/grid';
+import Youtube from '../design-system/icons/youtube';
+import Discord from '../design-system/icons/discord';
+import External from '../design-system/icons/external';
+import Footer from '../design-system/footer';
+import Navigation from '../design-system/navigation';
+import Wallet from '../design-system/wallet';
+import Banner from '../design-system/banner';
+import Card from '../design-system/card';
+import image from '../assets/pfp.png';
+import PFP from '../assets/pfp/legends.png';
+import GenesisPFP from '../assets/pfp/genesis.png';
+import DegenHoursPFP from '../assets/pfp/degenhours.png';
+import FrogtoberPFP from '../assets/pfp/frogtober.png';
+import LegendsPFP from '../assets/pfp/legends.png';
+import MutantsPFP from '../assets/pfp/mutants.png';
+import SerumPFP from '../assets/pfp/serum.png';
+import ElementalsPFP from '../assets/pfp/elementals.png';
+
 
 const Home: NextPage = () => {
   return (
