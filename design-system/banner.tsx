@@ -5,10 +5,11 @@ import Box from './box';
 import image from '../assets/banner/legends.png';
 import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
+import { StaticImageData } from 'next/image';
 
 type Props = {
   heading?: string;
-  pfp?: string;
+  pfp?: string | StaticImageData;
   children?: ReactNode;
   localStyles?: CSSObject;
 }

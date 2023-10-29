@@ -4,10 +4,11 @@ import Button from './button';
 import Box from './box';
 import ChevronDown from './icons/chevron';
 import Body from './body';
+import { StaticImageData } from 'next/image';
 
 export type Props = {
   balance?: number;
-  profile?: string;
+  profile?: string | StaticImageData;
   address?: string;
 };
 

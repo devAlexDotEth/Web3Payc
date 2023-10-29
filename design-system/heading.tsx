@@ -15,9 +15,9 @@ const Heading: FC<Props> = ({ level = '1', children, theme = 'LIGHT', localStyle
 
   const Inner = styled(HeadingTag)(({ level = '1', theme = 'LIGHT', localStyles }: Props) => ({
     margin: 0,
-    '-WebkitFontSmoothing': 'antialiased',
+    'WebkitFontSmoothing': 'antialiased',
     fontWeight: '500',
-    '-MozOsxFontSmoothing': 'grayscale',
+    'MozOsxFontSmoothing': 'grayscale',
     fontFamily:  'Akshar, sans-serif',
     lineHeight: 1,
     color: 'var(--dark-1000)',

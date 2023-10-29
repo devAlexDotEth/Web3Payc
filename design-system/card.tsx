@@ -5,10 +5,11 @@ import Box from './box';
 import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
 import Body from './body';
+import { StaticImageData } from 'next/image';
 
 type ElProps = {
   heading?: string;
-  pfp?: string;
+  pfp?: string | StaticImageData;
   size?: string;
   children?: ReactNode;
   localStyles?: CSSObject;
@@ -17,7 +18,7 @@ type ElProps = {
 type Props = {
   heading?: string;
   direction: 'HORIZONTAL' | 'VERTICAL';
-  pfp?: string;
+  pfp?: string | StaticImageData;
   size?: string;
   children?: ReactNode;
   localStyles?: CSSObject;
