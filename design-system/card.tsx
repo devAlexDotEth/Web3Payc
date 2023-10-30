@@ -6,6 +6,7 @@ import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
 import Body from './body';
 import { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 type ElProps = {
   heading?: string;
@@ -128,7 +129,7 @@ const ButtonGroup = styled.div(({ direction = "VERTICAL"}: Props) => ({
   }),
 }));
 
-const Image = styled.img(({ direction = "VERTICAL"}: Props) => ({
+const StyledImage = styled.img(({ direction = "VERTICAL"}: Props) => ({
   ...(direction === "VERTICAL" && {
     width: '100%',
     height: 'auto',
@@ -147,7 +148,7 @@ const Card: FC<Props> = ({ localStyles, pfp = PFP, size = "6969", children, head
   return (
     <El localStyles={localStyles} {...props}>
       <Content direction={direction}>
-        <Image direction={direction} src={pfp} alt={heading} />
+        <Image src={pfp} alt={heading} />
         <Inner direction={direction}>
           <HeadingGroup direction={direction} localStyles={{width: 'auto'}}>
             <Heading level="4">{heading}</Heading>

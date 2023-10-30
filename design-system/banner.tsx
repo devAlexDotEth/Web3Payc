@@ -6,6 +6,8 @@ import myImage from '../assets/banner/legends.png';
 import PFP from '../assets/pfp/placeholder.png';
 import Heading from './heading';
 import { StaticImageData } from 'next/image';
+import Image from 'next/image';
+
 
 type Props = {
   heading?: string;
@@ -78,7 +80,7 @@ const ButtonGroup = styled.div({
   },
 });
 
-const Image = styled.img({
+const StyledImage = styled.img({
   borderRadius: '100%',
   width: 120,
   height: 120,
