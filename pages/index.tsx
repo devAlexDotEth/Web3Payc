@@ -1,6 +1,5 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import { NextPage } from "next";
 import Button from '../design-system/button';
 import Twitter from '../design-system/icons/twitter';
